@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Page</title>
+    <style>
+        body {
+            background-image: url('https://mobirise.com/extensions/hotelm4/assets/images/background13-1920x1280.jpg');
+            background-size: cover;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(47, 103, 177, 0.6);
+            z-index: -1;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            margin: 20px auto;
+        }
+
+        .sidenav {
+            height: auto;
+            width: 160px;
+            background-color: whitesmoke;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+        }
+
+        .sidenav a {
+            display: block;
+            padding: 8px 16px;
+            text-decoration: none;
+            font-size: 15px;
+            color: #818181;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .sidenav a:hover {
+            color: lightblue;
+        }
+
+        .account-page {
+            padding: 30px;
+            width: 600px;
+            background-color: whitesmoke;
+            border-radius: 10px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+        }
+
+        .avatar-pic {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        small {
+            color: grey;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- Sidebar -->
+    <div class="sidenav">
+        <a href="accounts.html" style="background-color: mediumturquoise; color: white;">Settings</a>
+        <a href="accounts.html">Account</a>
+        <a href="#Notifications">Notifications</a>
+        <a href="#Password">Password</a>
+    </div>
+
+    <!-- Account Form -->
+    <div class="account-page">
+        <form>
+            <!-- Avatar Upload -->
+            <div class="file-field text-center">
+                <img src="https://mdbootstrap.com/img/Photos/Others/placeholder-avatar.jpg" class="avatar-pic" alt="Avatar">
+                <br>
+                <input type="file">
+            </div>
+
+            <hr>
+
+            <!-- User Details -->
+            <div>
+                <label for="first-name"><b>First Name</b></label>
+                <input id="first-name" type="text" class="form-control" placeholder="First name">
+
+                <label for="last-name"><b>Last Name</b></label>
+                <input id="last-name" type="text" class="form-control" placeholder="Last name">
+            </div>
+
+            <hr>
+
+            <div>
+                <label for="email"><b>Email Address</b></label>
+                <input id="email" type="email" class="form-control" placeholder="Email">
+
+                <label for="phone"><b>Phone Number</b></label>
+                <input id="phone" type="tel" class="form-control" placeholder="Phone Number">
+            </div>
+
+            <hr>
+
+            <div>
+                <label for="birthdate"><b>BirthDate</b></label>
+                <input id="birthdate" type="date" class="form-control">
+            </div>
+
+            <hr>
+
+            <!-- Delete Account -->
+            <div>
+                <p>
+                    <b>Delete account</b><br>
+                    <small>By deleting your account you will lose all your data.</small>
+                    <a href="#" class="btn">Delete account</a>
+                </p>
+            </div>
+
+            <hr>
+
+            <!-- Submit Button -->
+            <a href="#" class="btn">Update</a>
+        </form>
+    </div>
+</div>
+</body>
+</html>
